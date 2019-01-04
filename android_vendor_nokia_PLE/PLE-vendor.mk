@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -63,26 +63,10 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/etc/firmware/widevine.b05:system/etc/firmware/widevine.b05 \
     vendor/nokia/PLE/proprietary/etc/firmware/widevine.b06:system/etc/firmware/widevine.b06 \
     vendor/nokia/PLE/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg_D1C.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg_D1C.ini \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg_MA3.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg_MA3.ini \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg_MF3.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg_MF3.ini \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg_MS3.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg_MS3.ini \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg_ND1.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg_ND1.ini \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg_PLE.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg_PLE.ini \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg_QC.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg_QC.ini \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg_VZ1.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg_VZ1.ini \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_D1C_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_D1C_nv.bin \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_MA3_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_MA3_nv.bin \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_MF3_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_MF3_nv.bin \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_MS3_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_MS3_nv.bin \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_ND1_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_ND1_nv.bin \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_PLE_MP_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_PLE_MP_nv.bin \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_PLE_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_PLE_nv.bin \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_QC_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_QC_nv.bin \
-    vendor/nokia/PLE/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_VZ1_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_VZ1_nv.bin \
-    vendor/nokia/PLE/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
+    vendor/nokia/PLE/proprietary/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:system/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar \
     vendor/nokia/PLE/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
     vendor/nokia/PLE/proprietary/lib64/hw/fingerprint.elan.so:system/lib64/hw/fingerprint.elan.so \
+    vendor/nokia/PLE/proprietary/lib64/hw/fingerprint.msm8937.so:system/lib64/hw/fingerprint.msm8937.so \
     vendor/nokia/PLE/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/nokia/PLE/proprietary/vendor/bin/gx_fpcmd:system/vendor/bin/gx_fpcmd \
     vendor/nokia/PLE/proprietary/vendor/bin/gx_fpd:system/vendor/bin/gx_fpd \
@@ -172,6 +156,16 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/etc/acdbdata/VZS/Hdmi_cal.acdb:system/vendor/etc/acdbdata/VZS/Hdmi_cal.acdb \
     vendor/nokia/PLE/proprietary/vendor/etc/acdbdata/VZS/Headset_cal.acdb:system/vendor/etc/acdbdata/VZS/Headset_cal.acdb \
     vendor/nokia/PLE/proprietary/vendor/etc/acdbdata/VZS/Speaker_cal.acdb:system/vendor/etc/acdbdata/VZS/Speaker_cal.acdb \
+    vendor/nokia/PLE/proprietary/vendor/etc/audio/audio_policy_configuration.xml:system/vendor/etc/audio/audio_policy_configuration.xml \
+    vendor/nokia/PLE/proprietary/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    vendor/nokia/PLE/proprietary/vendor/etc/audio_platform_info_d1c.xml:system/vendor/etc/audio_platform_info_d1c.xml \
+    vendor/nokia/PLE/proprietary/vendor/etc/audio_platform_info_extcodec.xml:system/vendor/etc/audio_platform_info_extcodec.xml \
+    vendor/nokia/PLE/proprietary/vendor/etc/audio_platform_info_ms3.xml:system/vendor/etc/audio_platform_info_ms3.xml \
+    vendor/nokia/PLE/proprietary/vendor/etc/audio_platform_info_nd1.xml:system/vendor/etc/audio_platform_info_nd1.xml \
+    vendor/nokia/PLE/proprietary/vendor/etc/audio_platform_info_oc6.xml:system/vendor/etc/audio_platform_info_oc6.xml \
+    vendor/nokia/PLE/proprietary/vendor/etc/audio_platform_info_ple.xml:system/vendor/etc/audio_platform_info_ple.xml \
+    vendor/nokia/PLE/proprietary/vendor/etc/audio_platform_info_vzs.xml:system/vendor/etc/audio_platform_info_vzs.xml \
+    vendor/nokia/PLE/proprietary/vendor/etc/audio_platform_info_vzs_int.xml:system/vendor/etc/audio_platform_info_vzs_int.xml \
     vendor/nokia/PLE/proprietary/vendor/etc/camera/camera_config.xml:system/vendor/etc/camera/camera_config.xml \
     vendor/nokia/PLE/proprietary/vendor/etc/camera/csidtg_camera.xml:system/vendor/etc/camera/csidtg_camera.xml \
     vendor/nokia/PLE/proprietary/vendor/etc/camera/csidtg_chromatix.xml:system/vendor/etc/camera/csidtg_chromatix.xml \
@@ -241,13 +235,11 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.fih.check.rc:system/vendor/etc/init/hw/init.fih.check.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.key.rc:system/vendor/etc/init/hw/init.key.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.led.rc:system/vendor/etc/init/hw/init.led.rc \
-    vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.msm.usb.configfs.rc:system/vendor/etc/init/hw/init.msm.usb.configfs.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.qcom.battery.rc:system/vendor/etc/init/hw/init.qcom.battery.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.qcom.cda.rc:system/vendor/etc/init/hw/init.qcom.cda.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.qcom.device.rc:system/vendor/etc/init/hw/init.qcom.device.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.qcom.factory.rc:system/vendor/etc/init/hw/init.qcom.factory.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.qcom.fs.rc:system/vendor/etc/init/hw/init.qcom.fs.rc \
-    vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.qcom.misc.rc:system/vendor/etc/init/hw/init.qcom.misc.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.qcom.poweroff_charging.rc:system/vendor/etc/init/hw/init.qcom.poweroff_charging.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.qcom.ramdump.rc:system/vendor/etc/init/hw/init.qcom.ramdump.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/hw/init.qcom.target.rc:system/vendor/etc/init/hw/init.qcom.target.rc \
@@ -299,20 +291,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/firmware/libpn551_fw.so:system/vendor/firmware/libpn551_fw.so \
     vendor/nokia/PLE/proprietary/vendor/firmware/libpn553_fw.so:system/vendor/firmware/libpn553_fw.so \
     vendor/nokia/PLE/proprietary/vendor/firmware/libpn557_fw.so:system/vendor/firmware/libpn557_fw.so \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537AA1/cmcc_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537AA1/cmcc_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537AA1/ct_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537AA1/ct_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537AA1/cu_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537AA1/cu_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537AA1/row_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537AA1/row_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537AB1/cmcc_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537AB1/cmcc_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537AB1/ct_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537AB1/ct_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537AB1/cu_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537AB1/cu_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537AB1/row_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537AB1/row_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537BA1/row_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537BA1/row_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537BA1/ytl_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537BA1/ytl_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537CA1/reliance_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537CA1/reliance_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537CA1/row_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537CA1/row_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537EC1/reliance_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537EC1/reliance_mcfg_sw.mbn \
-    vendor/nokia/PLE/proprietary/vendor/firmware/modem_config/S88537EC1/row_mcfg_sw.mbn:system/vendor/firmware/modem_config/S88537EC1/row_mcfg_sw.mbn \
     vendor/nokia/PLE/proprietary/vendor/lib/hw/camera.msm8937.so:system/vendor/lib/hw/camera.msm8937.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libactuator_ad5816g.so:system/vendor/lib/libactuator_ad5816g.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libactuator_ad5823.so:system/vendor/lib/libactuator_ad5823.so \
@@ -1620,6 +1598,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libmm-qcamera.so:system/vendor/lib/libmm-qcamera.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libmmcamera2_dcrf.so:system/vendor/lib/libmmcamera2_dcrf.so \
@@ -1800,10 +1779,12 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libremosaic_daemon.so:system/vendor/lib/libremosaic_daemon.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
-    vendor/nokia/PLE/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/hw/fingerprint.goodix.so:system/vendor/lib64/hw/fingerprint.goodix.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/hw/gxfingerprint.default.so:system/vendor/lib64/hw/gxfingerprint.default.so \
+    vendor/nokia/PLE/proprietary/vendor/lib64/libalgoandroid.so:system/vendor/lib64/libalgoandroid.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libfp_client.so:system/vendor/lib64/libfp_client.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libfpjni.so:system/vendor/lib64/libfpjni.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libfpservice.so:system/vendor/lib64/libfpservice.so \
@@ -1814,14 +1795,20 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib64/libmmcamera_cac3_lib.so:system/vendor/lib64/libmmcamera_cac3_lib.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libmmcamera_dbg.so:system/vendor/lib64/libmmcamera_dbg.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:system/vendor/lib64/libmmcamera_tintless_algo.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+    vendor/nokia/PLE/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
 PRODUCT_PACKAGES += \
-    libts_detected_face_hal \
-    libts_face_beautify_hal
+    vendor.qti.hardware.fingerprint@1.0
 PRODUCT_COPY_FILES += \
+    vendor/nokia/PLE/proprietary/bin/FIH_SmartAmp:system/bin/FIH_SmartAmp \
+    vendor/nokia/PLE/proprietary/bin/data_umount:system/bin/data_umount \
     vendor/nokia/PLE/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/nokia/PLE/proprietary/etc/NXPsmartamp/settings/Tfa9891_PLE.cnt:system/etc/NXPsmartamp/settings/Tfa9891_PLE.cnt \
+    vendor/nokia/PLE/proprietary/etc/NXPsmartamp/settings/Tfa9891_PLE.ini:system/etc/NXPsmartamp/settings/Tfa9891_PLE.ini \
+    vendor/nokia/PLE/proprietary/etc/NXPsmartamp/settings/Tfa9891_PLE_bot.cnt:system/etc/NXPsmartamp/settings/Tfa9891_PLE_bot.cnt \
+    vendor/nokia/PLE/proprietary/etc/NXPsmartamp/settings/Tfa9891_PLE_bot.ini:system/etc/NXPsmartamp/settings/Tfa9891_PLE_bot.ini \
+    vendor/nokia/PLE/proprietary/etc/NXPsmartamp/settings/Tfa9891_PLE_top.cnt:system/etc/NXPsmartamp/settings/Tfa9891_PLE_top.cnt \
+    vendor/nokia/PLE/proprietary/etc/NXPsmartamp/settings/Tfa9891_PLE_top.ini:system/etc/NXPsmartamp/settings/Tfa9891_PLE_top.ini \
     vendor/nokia/PLE/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/nokia/PLE/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/nokia/PLE/proprietary/etc/dolby/dax-default.xml:system/etc/dolby/dax-default.xml \
@@ -1844,22 +1831,30 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/nokia/PLE/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/nokia/PLE/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
-    vendor/nokia/PLE/proprietary/framework/android.hardware.light-V2.0-java.jar:system/framework/android.hardware.light-V2.0-java.jar \
+    vendor/nokia/PLE/proprietary/etc/thermal-engine-PLE.conf:system/etc/thermal-engine-PLE.conf \
+    vendor/nokia/PLE/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
+    vendor/nokia/PLE/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/nokia/PLE/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/nokia/PLE/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/nokia/PLE/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/nokia/PLE/proprietary/framework/com.qualcomm.qti.imscmservice@1.0-java.jar:system/framework/com.qualcomm.qti.imscmservice@1.0-java.jar \
+    vendor/nokia/PLE/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
+    vendor/nokia/PLE/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/nokia/PLE/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
+    vendor/nokia/PLE/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/nokia/PLE/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
+    vendor/nokia/PLE/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/nokia/PLE/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/nokia/PLE/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/nokia/PLE/proprietary/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/nokia/PLE/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/nokia/PLE/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/nokia/PLE/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
     vendor/nokia/PLE/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/nokia/PLE/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/nokia/PLE/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
+    vendor/nokia/PLE/proprietary/lib/lib_FIH_SmartAmp.so:system/lib/lib_FIH_SmartAmp.so \
+    vendor/nokia/PLE/proprietary/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
+    vendor/nokia/PLE/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
     vendor/nokia/PLE/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/nokia/PLE/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
     vendor/nokia/PLE/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
@@ -1868,13 +1863,13 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
     vendor/nokia/PLE/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/nokia/PLE/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
+    vendor/nokia/PLE/proprietary/lib/libqct_resampler.so:system/lib/libqct_resampler.so \
     vendor/nokia/PLE/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
     vendor/nokia/PLE/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
-    vendor/nokia/PLE/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
     vendor/nokia/PLE/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/nokia/PLE/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
-    vendor/nokia/PLE/proprietary/vendor/lib/libsdm-disp-apis.so:system/vendor/lib/libsdm-disp-apis.so \
+    vendor/nokia/PLE/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
     vendor/nokia/PLE/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/nokia/PLE/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
     vendor/nokia/PLE/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
@@ -1884,7 +1879,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/lib/vendor.qti.hardware.vpp@1.1.so:system/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/nokia/PLE/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
     vendor/nokia/PLE/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
-    vendor/nokia/PLE/proprietary/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/nokia/PLE/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/nokia/PLE/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/nokia/PLE/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
@@ -1892,6 +1886,8 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/nokia/PLE/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/nokia/PLE/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
+    vendor/nokia/PLE/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
+    vendor/nokia/PLE/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/nokia/PLE/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/nokia/PLE/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
     vendor/nokia/PLE/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
@@ -1901,15 +1897,12 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/nokia/PLE/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/nokia/PLE/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
-    vendor/nokia/PLE/proprietary/lib64/libnqnfc-nci.so:system/lib64/libnqnfc-nci.so \
-    vendor/nokia/PLE/proprietary/lib64/libnqnfc_nci_jni.so:system/lib64/libnqnfc_nci_jni.so \
     vendor/nokia/PLE/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
     vendor/nokia/PLE/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
-    vendor/nokia/PLE/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
     vendor/nokia/PLE/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/nokia/PLE/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libsd_sdk_display.so:system/vendor/lib64/libsd_sdk_display.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libsdm-disp-apis.so:system/vendor/lib64/libsdm-disp-apis.so \
+    vendor/nokia/PLE/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
     vendor/nokia/PLE/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
     vendor/nokia/PLE/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
     vendor/nokia/PLE/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
@@ -1931,7 +1924,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/bin/hw/android.hardware.drm@1.0-service.widevine:system/vendor/bin/hw/android.hardware.drm@1.0-service.widevine \
     vendor/nokia/PLE/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:system/vendor/bin/hw/vendor.display.color@1.0-service \
     vendor/nokia/PLE/proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service:system/vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service \
-    vendor/nokia/PLE/proprietary/vendor/bin/hw/vendor.nxp.hardware.nfc@1.0-service:system/vendor/bin/hw/vendor.nxp.hardware.nfc@1.0-service \
     vendor/nokia/PLE/proprietary/vendor/bin/hw/vendor.qti.gnss@1.0-service:system/vendor/bin/hw/vendor.qti.gnss@1.0-service \
     vendor/nokia/PLE/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:system/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service \
     vendor/nokia/PLE/proprietary/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti:system/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti \
@@ -1947,7 +1939,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
     vendor/nokia/PLE/proprietary/vendor/bin/msm_irqbalance:system/vendor/bin/msm_irqbalance \
     vendor/nokia/PLE/proprietary/vendor/bin/netmgrd:system/vendor/bin/netmgrd \
-    vendor/nokia/PLE/proprietary/vendor/bin/nqnfcinfo:system/vendor/bin/nqnfcinfo \
     vendor/nokia/PLE/proprietary/vendor/bin/pm-proxy:system/vendor/bin/pm-proxy \
     vendor/nokia/PLE/proprietary/vendor/bin/pm-service:system/vendor/bin/pm-service \
     vendor/nokia/PLE/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
@@ -1985,20 +1976,25 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:system/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml \
     vendor/nokia/PLE/proprietary/vendor/etc/data/dsi_config.xml:system/vendor/etc/data/dsi_config.xml \
     vendor/nokia/PLE/proprietary/vendor/etc/data/netmgr_config.xml:system/vendor/etc/data/netmgr_config.xml \
+    vendor/nokia/PLE/proprietary/vendor/etc/drc/drc_cfg_5.1.txt:system/vendor/etc/drc/drc_cfg_5.1.txt \
+    vendor/nokia/PLE/proprietary/vendor/etc/drc/drc_cfg_AZ.txt:system/vendor/etc/drc/drc_cfg_AZ.txt \
     vendor/nokia/PLE/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:system/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc:system/vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:system/vendor/etc/init/vendor.display.color@1.0-service.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc:system/vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc \
-    vendor/nokia/PLE/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@1.0-service.rc:system/vendor/etc/init/vendor.nxp.hardware.nfc@1.0-service.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:system/vendor/etc/init/vendor.qti.gnss@1.0-service.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc:system/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/nokia/PLE/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:system/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
+    vendor/nokia/PLE/proprietary/vendor/etc/mixer_paths.xml:system/vendor/etc/mixer_paths.xml \
     vendor/nokia/PLE/proprietary/vendor/etc/perf/perf-profile0.conf:system/vendor/etc/perf/perf-profile0.conf \
     vendor/nokia/PLE/proprietary/vendor/etc/perf/perf-profile1.conf:system/vendor/etc/perf/perf-profile1.conf \
     vendor/nokia/PLE/proprietary/vendor/etc/perf/perfboostsconfig.xml:system/vendor/etc/perf/perfboostsconfig.xml \
-    vendor/nokia/PLE/proprietary/vendor/etc/permissions/android.hardware.light.xml:system/vendor/etc/permissions/android.hardware.light.xml \
+    vendor/nokia/PLE/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
+    vendor/nokia/PLE/proprietary/vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg:system/vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg \
+    vendor/nokia/PLE/proprietary/vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg:system/vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg \
+    vendor/nokia/PLE/proprietary/vendor/etc/thermal-engine.conf:system/vendor/etc/thermal-engine.conf \
     vendor/nokia/PLE/proprietary/vendor/etc/xtra_root_cert.pem:system/vendor/etc/xtra_root_cert.pem \
     vendor/nokia/PLE/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so \
     vendor/nokia/PLE/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so \
@@ -2024,13 +2020,11 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
     vendor/nokia/PLE/proprietary/vendor/lib/hw/activity_recognition.msm8937.so:system/vendor/lib/hw/activity_recognition.msm8937.so \
     vendor/nokia/PLE/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/hw/audio.primary.msm8937.so:system/vendor/lib/hw/audio.primary.msm8937.so \
     vendor/nokia/PLE/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:system/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/nokia/PLE/proprietary/vendor/lib/hw/gatekeeper.msm8937.so:system/vendor/lib/hw/gatekeeper.msm8937.so \
     vendor/nokia/PLE/proprietary/vendor/lib/hw/keystore.msm8937.so:system/vendor/lib/hw/keystore.msm8937.so \
-    vendor/nokia/PLE/proprietary/vendor/lib/hw/nfc_nci.msm8937.so:system/vendor/lib/hw/nfc_nci.msm8937.so \
     vendor/nokia/PLE/proprietary/vendor/lib/hw/sound_trigger.primary.msm8937.so:system/vendor/lib/hw/sound_trigger.primary.msm8937.so \
-    vendor/nokia/PLE/proprietary/vendor/lib/hw/thermal.msm8937.so:system/vendor/lib/hw/thermal.msm8937.so \
-    vendor/nokia/PLE/proprietary/vendor/lib/hw/vendor.nxp.hardware.nfc@1.0-impl.so:system/vendor/lib/hw/vendor.nxp.hardware.nfc@1.0-impl.so \
     vendor/nokia/PLE/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/nokia/PLE/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so \
     vendor/nokia/PLE/proprietary/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
@@ -2046,8 +2040,11 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
     vendor/nokia/PLE/proprietary/vendor/lib/lib-siputility.so:system/vendor/lib/lib-siputility.so \
     vendor/nokia/PLE/proprietary/vendor/lib/lib-uceservice.so:system/vendor/lib/lib-uceservice.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libAlacSwDec.so:system/vendor/lib/libAlacSwDec.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libApeSwDec.so:system/vendor/lib/libApeSwDec.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libMpeg4SwEncoder.so:system/vendor/lib/libMpeg4SwEncoder.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
@@ -2059,6 +2056,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/libOmxApeDecSw.so:system/vendor/lib/libOmxApeDecSw.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libOmxDsdDec.so:system/vendor/lib/libOmxDsdDec.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libOmxG711Dec.so:system/vendor/lib/libOmxG711Dec.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libOmxSwVdec.so:system/vendor/lib/libOmxSwVdec.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libOmxSwVencMpeg4.so:system/vendor/lib/libOmxSwVencMpeg4.so \
@@ -2066,6 +2064,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/libOmxVpp.so:system/vendor/lib/libOmxVpp.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libOpenCL_system.so:system/vendor/lib/libOpenCL_system.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
@@ -2078,7 +2077,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/libadsp_default_listener.so:system/vendor/lib/libadsp_default_listener.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-    vendor/nokia/PLE/proprietary/vendor/lib/libaudio_log_utils.so:system/vendor/lib/libaudio_log_utils.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libbt-hidlclient.so:system/vendor/lib/libbt-hidlclient.so \
@@ -2087,7 +2085,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
-    vendor/nokia/PLE/proprietary/vendor/lib/libcld80211.so:system/vendor/lib/libcld80211.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libcneoplookup.so:system/vendor/lib/libcneoplookup.so \
@@ -2100,6 +2097,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/libdlbdsservice.so:system/vendor/lib/libdlbdsservice.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libdlbmemoryservice.so:system/vendor/lib/libdlbmemoryservice.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libdpmqmihal.so:system/vendor/lib/libdpmqmihal.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libdrc.so:system/vendor/lib/libdrc.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
@@ -2107,6 +2105,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/libfeedbackhandler.so:system/vendor/lib/libfeedbackhandler.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libhdr_tm.so:system/vendor/lib/libhdr_tm.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
@@ -2119,6 +2118,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libmmosal_proprietary.so:system/vendor/lib/libmmosal_proprietary.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libomx-dts.so:system/vendor/lib/libomx-dts.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libperfgluelayer.so:system/vendor/lib/libperfgluelayer.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
@@ -2148,19 +2148,23 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/libsdmextension.so:system/vendor/lib/libsdmextension.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libsensor_thresh.so:system/vendor/lib/libsensor_thresh.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libsensor_user_cal.so:system/vendor/lib/libsensor_user_cal.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libstagefright_soft_ddpdec.so:system/vendor/lib/libstagefright_soft_ddpdec.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libsurround_3mic_proc.so:system/vendor/lib/libsurround_3mic_proc.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/libsurround_proc.so:system/vendor/lib/libsurround_proc.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libswvdec.so:system/vendor/lib/libswvdec.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libtinyxml2_1.so:system/vendor/lib/libtinyxml2_1.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libvpplibrary.so:system/vendor/lib/libvpplibrary.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libvqzip.so:system/vendor/lib/libvqzip.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
-    vendor/nokia/PLE/proprietary/vendor/lib/libwpa_client.so:system/vendor/lib/libwpa_client.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libwvhidl.so:system/vendor/lib/libwvhidl.so \
     vendor/nokia/PLE/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/nokia/PLE/proprietary/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so \
     vendor/nokia/PLE/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so \
     vendor/nokia/PLE/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
@@ -2175,11 +2179,11 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
     vendor/nokia/PLE/proprietary/vendor/lib/soundfx/libshoebox.so:system/vendor/lib/soundfx/libshoebox.so \
     vendor/nokia/PLE/proprietary/vendor/lib/soundfx/libswdap.so:system/vendor/lib/soundfx/libswdap.so \
+    vendor/nokia/PLE/proprietary/vendor/lib/surround_sound_headers.so:system/vendor/lib/surround_sound_headers.so \
     vendor/nokia/PLE/proprietary/vendor/lib/vendor.display.color@1.0_vendor.so:system/vendor/lib/vendor.display.color@1.0_vendor.so \
     vendor/nokia/PLE/proprietary/vendor/lib/vendor.display.postproc@1.0_vendor.so:system/vendor/lib/vendor.display.postproc@1.0_vendor.so \
     vendor/nokia/PLE/proprietary/vendor/lib/vendor.dolby.hardware.dms@1.0-impl.so:system/vendor/lib/vendor.dolby.hardware.dms@1.0-impl.so \
     vendor/nokia/PLE/proprietary/vendor/lib/vendor.dolby.hardware.dms@1.0.so:system/vendor/lib/vendor.dolby.hardware.dms@1.0.so \
-    vendor/nokia/PLE/proprietary/vendor/lib/vendor.nxp.hardware.nfc@1.0_vendor.so:system/vendor/lib/vendor.nxp.hardware.nfc@1.0_vendor.so \
     vendor/nokia/PLE/proprietary/vendor/lib/vendor.qti.hardware.alarm@1.0.so:system/vendor/lib/vendor.qti.hardware.alarm@1.0.so \
     vendor/nokia/PLE/proprietary/vendor/lib/vendor.qti.hardware.data.latency@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.data.latency@1.0_vendor.so \
     vendor/nokia/PLE/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so \
@@ -2230,10 +2234,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:system/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/hw/gatekeeper.msm8937.so:system/vendor/lib64/hw/gatekeeper.msm8937.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/hw/keystore.msm8937.so:system/vendor/lib64/hw/keystore.msm8937.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/hw/nfc_nci.msm8937.so:system/vendor/lib64/hw/nfc_nci.msm8937.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/hw/sound_trigger.primary.msm8937.so:system/vendor/lib64/hw/sound_trigger.primary.msm8937.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/hw/thermal.msm8937.so:system/vendor/lib64/hw/thermal.msm8937.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/hw/vendor.nxp.hardware.nfc@1.0-impl.so:system/vendor/lib64/hw/vendor.nxp.hardware.nfc@1.0-impl.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so \
@@ -2256,22 +2257,8 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib64/libDRPlugin.so:system/vendor/lib64/libDRPlugin.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libGPreqcancel.so:system/vendor/lib64/libGPreqcancel.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libI420colorconvert.so:system/vendor/lib64/libI420colorconvert.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libMpeg4SwEncoder.so:system/vendor/lib64/libMpeg4SwEncoder.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxAlacDec.so:system/vendor/lib64/libOmxAlacDec.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxAlacDecSw.so:system/vendor/lib64/libOmxAlacDecSw.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxAmrDec.so:system/vendor/lib64/libOmxAmrDec.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:system/vendor/lib64/libOmxAmrwbplusDec.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxApeDec.so:system/vendor/lib64/libOmxApeDec.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxApeDecSw.so:system/vendor/lib64/libOmxApeDecSw.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxEvrcDec.so:system/vendor/lib64/libOmxEvrcDec.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxQcelp13Dec.so:system/vendor/lib64/libOmxQcelp13Dec.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxSwVdec.so:system/vendor/lib64/libOmxSwVdec.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxSwVencMpeg4.so:system/vendor/lib64/libOmxSwVencMpeg4.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxVpp.so:system/vendor/lib64/libOmxVpp.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libOmxWmaDec.so:system/vendor/lib64/libOmxWmaDec.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
+    vendor/nokia/PLE/proprietary/vendor/lib64/libOpenCL_system.so:system/vendor/lib64/libOpenCL_system.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libSecureUILib.so:system/vendor/lib64/libSecureUILib.so \
@@ -2285,10 +2272,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib64/libadsp_default_listener.so:system/vendor/lib64/libadsp_default_listener.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libaptXHD_encoder.so:system/vendor/lib64/libaptXHD_encoder.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libaptX_encoder.so:system/vendor/lib64/libaptX_encoder.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libaudio_log_utils.so:system/vendor/lib64/libaudio_log_utils.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libaudioalsa.so:system/vendor/lib64/libaudioalsa.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libbt-hidlclient.so:system/vendor/lib64/libbt-hidlclient.so \
@@ -2297,7 +2281,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libc2d30-a5xx.so:system/vendor/lib64/libc2d30-a5xx.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libc2d30_bltlib.so:system/vendor/lib64/libc2d30_bltlib.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libcld80211.so:system/vendor/lib64/libcld80211.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libcneoplookup.so:system/vendor/lib64/libcneoplookup.so \
@@ -2340,11 +2323,9 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libmdsprpc.so:system/vendor/lib64/libmdsprpc.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libmmosal_proprietary.so:system/vendor/lib64/libmmosal_proprietary.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libperfgluelayer.so:system/vendor/lib64/libperfgluelayer.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
@@ -2369,6 +2350,7 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib64/libqti-utils.so:system/vendor/lib64/libqti-utils.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libqtigef.so:system/vendor/lib64/libqtigef.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
+    vendor/nokia/PLE/proprietary/vendor/lib64/libril-qc-hal-qmi.so:system/vendor/lib64/libril-qc-hal-qmi.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:system/vendor/lib64/libril-qc-ltedirectdisc.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
@@ -2385,20 +2367,18 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib64/libsecureui_svcsock.so:system/vendor/lib64/libsecureui_svcsock.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
+    vendor/nokia/PLE/proprietary/vendor/lib64/libsensor_thresh.so:system/vendor/lib64/libsensor_thresh.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libsensor_user_cal.so:system/vendor/lib64/libsensor_user_cal.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libslimclient.so:system/vendor/lib64/libslimclient.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libswvdec.so:system/vendor/lib64/libswvdec.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libtinyxml2_1.so:system/vendor/lib64/libtinyxml2_1.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libvpplibrary.so:system/vendor/lib64/libvpplibrary.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/libwpa_client.so:system/vendor/lib64/libwpa_client.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
@@ -2414,7 +2394,6 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/lib64/vendor.display.postproc@1.0_vendor.so:system/vendor/lib64/vendor.display.postproc@1.0_vendor.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so:system/vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/vendor.dolby.hardware.dms@1.0.so:system/vendor/lib64/vendor.dolby.hardware.dms@1.0.so \
-    vendor/nokia/PLE/proprietary/vendor/lib64/vendor.nxp.hardware.nfc@1.0_vendor.so:system/vendor/lib64/vendor.nxp.hardware.nfc@1.0_vendor.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/vendor.qti.gnss@1.0_vendor.so:system/vendor/lib64/vendor.qti.gnss@1.0_vendor.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:system/vendor/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/nokia/PLE/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so \
@@ -2442,15 +2421,19 @@ PRODUCT_COPY_FILES += \
     vendor/nokia/PLE/proprietary/vendor/radio/qcril_database/qcril.db:system/vendor/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
+    com.qualcomm.qti.bluetooth_audio@1.0 \
     libantradio \
     vendor.display.color@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
+    libaudio_log_utils \
+    libsdm-disp-apis \
     libsdm-disp-vndapis \
     libthermalclient \
     libtime_genoff \
     libloc_api_v02 \
+    DeviceMonitorControl \
     QtiTelephonyService \
     datastatusnotification \
     embms \
@@ -2463,15 +2446,9 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     TimeService \
     colorservice \
-    QtiTelephonyServicelibrary \
     audiosphere \
-    cneapiclient \
-    com.quicinc.cne.api-V1.0-java \
-    com.quicinc.cne \
     dolby_dax \
-    embmslibrary \
     qcrilhook \
-    qti-telephony-common \
     qti-vzw-ims-internal \
     vendor.qti.hardware.alarm-V1.0-java \
     vendor.qti.hardware.sensorscalibrate-V1.0-java
